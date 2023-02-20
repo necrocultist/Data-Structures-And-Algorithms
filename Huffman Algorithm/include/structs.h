@@ -1,30 +1,22 @@
 //--- 2022-2023 Fall Semester Data Structure Assignment 2 ---//
-//--------------------------//
 //---Name & Surname: Kaan Karataş
 //---Student Number: 150200081
-//--------------------------//
 
 #ifndef _structs
 #define _structs
 
-//-------------Do Not Add New Libraries-------------//
-//-------------All Libraries Needed Were Given-------------//
 #include <iostream>
 #include <stdio.h>
 #include <string.h>
 
 using namespace std;
 
-//-------------Do Not Add New Class(es)-------------//
-
-//-------------Token Class To Store Character Info-------------//
 class Token{
     public:
         string symbol;
         int val = 0;
 };
 
-//-------------Node Class for Priority Queue and Tree-------------//
 class Node{
     public:
         Token token;
@@ -33,7 +25,6 @@ class Node{
         Node *right;
 };
 
-//-------------Priority Queue Class-------------//
 class PriorityQueue{
     public:
         Node *head;
@@ -42,7 +33,6 @@ class PriorityQueue{
         Node* dequeue();
 };
 
-//-------------Tree Class-------------//
 class Tree{
     public:
         Node *root;

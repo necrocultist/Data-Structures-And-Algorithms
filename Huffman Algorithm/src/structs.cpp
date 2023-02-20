@@ -1,11 +1,7 @@
 //--- 2022-2023 Fall Semester Data Structure Assignment 2 ---//
-//--------------------------//
 //---Name & Surname: Kaan Karataş
 //---Student Number: 150200081
-//--------------------------//
 
-//-------------Do Not Add New Libraries-------------//
-//-------------All Libraries Needed Were Given-------------//
 #include <iostream>
 #include <stdio.h>
 #include <string.h>
@@ -15,15 +11,11 @@
 
 using namespace std;
 
-//-------------Complete The Functions Below-------------//
-
-//-------------Initialize Priority Queue-------------//
 PriorityQueue::PriorityQueue()
 {
     this->head = NULL;
 };
 
-//-------------Insert New Node To Priority Queue-------------//
 void PriorityQueue::enque(Node *newnode)
 {
     // if no head, make newnode head
@@ -58,7 +50,6 @@ void PriorityQueue::enque(Node *newnode)
     traverse->next = newnode;
 };
 
-//-------------Remove Node From Priority Queue-------------//
 Node *PriorityQueue::dequeue()
 {
     Node *removed_node = head;
@@ -84,24 +75,18 @@ Node *PriorityQueue::dequeue()
     return removed_node;
 };
 
-//-------------Initialize Tree-------------//
 Tree::Tree()
 {
     this->root = NULL;
 };
 
-//-------------Delete Tree Nodes From Memory-------------//
 Tree::~Tree()
 {
     deleteTree(root);
 };
 
-//-------------Delete Tree From Memory-------------//
 void Tree::deleteTree(Node *node)
 {
-    //-------------This Function Is Not Necessary-------------//
-    //-----------------Use It At Your Own Will----------------//
-
     //traverse through the tree deleting every node
     if(!node)
         return;
@@ -110,7 +95,6 @@ void Tree::deleteTree(Node *node)
         delete node;
 }
 
-//-------------Merges Two Node Into One-------------//
 Node *Tree::mergeNodes(Node *temp1, Node *temp2)
 {
     // create a new node and set its properties the sum of left and right, then set its left and right

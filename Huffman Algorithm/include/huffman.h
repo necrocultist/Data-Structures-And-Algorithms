@@ -1,14 +1,10 @@
 //--- 2022-2023 Fall Semester Data Structure Assignment 2 ---//
-//--------------------------//
 //---Name & Surname: Kaan Karataş
 //---Student Number: 150200081
-//--------------------------//
 
 #ifndef _huffman
 #define _huffman
 
-//-------------Do Not Add New Libraries-------------//
-//-------------All Libraries Needed Were Given-------------//
 #include <iostream>
 #include <stdio.h>
 #include <string.h>
@@ -17,11 +13,6 @@
 
 using namespace std;
 
-//--------------Do Not Change The Class--------------//
-//--------------Do Not Add A New Class---------------//
-//--------------You Can Add New Functions------------//
-
-//-------------Huffman Class-------------//
 class Huffman{
     private:
         string key;
