@@ -1,2 +1,2 @@
 # Data-Structures-And-Algorithms
-The repo where I try and implement various algorithms, principles using Data Strcutures.
+The repository where I implement various algorithms and principles using data structures.
